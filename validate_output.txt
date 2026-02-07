@@ -1,0 +1,69 @@
+prisma:cli:bin Failed to initialize the command state: Error: ENOENT: no such file or directory, open 'C:\Users\MOHAMMED MINHAJ\AppData\Roaming\prisma-nodejs\Config\commands.json' +1124ms
+prisma:config:loadConfigFromFile Config file loaded in 95.43ms +1051ms
+prisma:config:loadConfigFromFile No config file found in the current working directory C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew +0ms
+prisma:getSchema prismaConfig null +104ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +1ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +1ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+prisma:getConfig Using getConfig Wasm +2ms
+prisma:cli Failed to read schema information. Using default values: '{\n  "name": "GetConfigError"\n}' +16ms
+prisma:engines binaries to download schema-engine, libquery-engine +1241ms
+prisma:getSchema prismaConfig null +5ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema prismaConfig null +0ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +1ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+prisma:getConfig Using getConfig Wasm +5ms
+prisma:getConfig config data retrieved without errors in getConfig Wasm +1ms
+prisma:cli:checkpoint runCheckpointClientCheck(): Execution time for getting info: 12.00909999999999 ms +1ms
+prisma:cli:checkpoint runCheckpointClientCheck(): Execution time for "await checkpoint.check(data)": 76.78070000000002 ms +77ms
+prisma:loadEnv project root found at C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\package.json +95ms
+prisma:getSchema prismaConfig null +1ms
+prisma:tryLoadEnv Environment variables loaded from C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\.env +0ms
+Environment variables loaded from .env
+prisma:getSchema prismaConfig null +2ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\schema.prisma +0ms
+prisma:getSchema Checking existence of C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+prisma:getSchema Reading schema from single file C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\prisma\schema.prisma +0ms
+Prisma schema loaded from prisma\schema.prisma
+prisma:validate Using validate Wasm +13ms
+prisma:validate error of type "wasm-error" in validateWasm:
+ {
+  "reason": "(validate wasm)",
+  "error": {}
+} +2ms
+
+Error: ValidateError: Prisma schema validation - (validate wasm)
+Error code: P1012
+[1;91merror[0m: [1mError parsing attribute "@default": The `autoincrement()` default value is used on a non-id field even though the datasource does not support this.[0m
+  [1;94m-->[0m  [4mprisma\schema.prisma:67[0m
+[1;94m   | [0m
+[1;94m66 | [0m  id           String    @id @default(cuid())
+[1;94m67 | [0m  [1;91mticketNumber Int       @default(autoincrement())[0m
+[1;94m68 | [0m  userId       String?
+[1;94m   | [0m
+[1;91merror[0m: [1mError parsing attribute "@default": The `autoincrement()` default value is used on a non-indexed field even though the datasource does not support this.[0m
+  [1;94m-->[0m  [4mprisma\schema.prisma:67[0m
+[1;94m   | [0m
+[1;94m66 | [0m  id           String    @id @default(cuid())
+[1;94m67 | [0m  [1;91mticketNumber Int       @default(autoincrement())[0m
+[1;94m68 | [0m  userId       String?
+[1;94m   | [0m
+
+Validation Error Count: 2
+[Context: validate]
+
+Prisma CLI Version : 6.19.2
+    at C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:307:702
+    at e.with (C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:240:31324)
+    at Wm (C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:307:465)
+    at e.parse (C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:4907:460)
+    at async e.parse (C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:4084:1867)
+    at async D4t (C:\Users\MOHAMMED MINHAJ\OneDrive\Documents\Desktop\qcrew\node_modules\prisma\build\index.js:4910:132)

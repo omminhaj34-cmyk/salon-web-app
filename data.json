@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "CUSTOMER"
+    },
+    {
+      "id": "barber-1",
+      "name": "Sweeney Todd",
+      "email": "barber@qcrew.com",
+      "role": "BARBER"
+    },
+    {
+      "id": "admin-1",
+      "name": "Admin User",
+      "email": "admin@qcrew.com",
+      "role": "ADMIN"
+    }
+  ],
+  "barbershops": [
+    {
+      "id": "shop-1",
+      "name": "Gentleman's Cut",
+      "address": "123 Main St, Springfield",
+      "phone": "555-0123",
+      "hours": "Mon-Fri 9am-6pm, Sat 10am-4pm"
+    }
+  ],
+  "services": [
+    {
+      "id": "service-1",
+      "barbershopId": "shop-1",
+      "name": "Classic Haircut",
+      "duration": 30,
+      "price": 25
+    },
+    {
+      "id": "service-2",
+      "barbershopId": "shop-1",
+      "name": "Beard Trim",
+      "duration": 15,
+      "price": 15
+    },
+    {
+      "id": "service-3",
+      "barbershopId": "shop-1",
+      "name": "Full Service Combo",
+      "duration": 45,
+      "price": 35
+    }
+  ],
+  "queue": [
+    {
+      "guestName": "Minhaj",
+      "serviceId": "service-1",
+      "barbershopId": "shop-1",
+      "status": "COMPLETED",
+      "id": "tj2tlr",
+      "joinedAt": "2026-02-07T08:36:13.146Z",
+      "ticketNumber": 1
+    },
+    {
+      "guestName": "Walk-in Guest",
+      "serviceId": "service-3",
+      "barbershopId": "shop-1",
+      "status": "WAITING",
+      "id": "demo-wait-1",
+      "joinedAt": "2026-02-07T09:00:00.000Z",
+      "ticketNumber": 2
+    }
+  ],
+  "appointments": [
+    {
+      "id": "imwjm8",
+      "userId": "guest-ke4dvk",
+      "guestName": "Minhaj",
+      "email": "omminhaj34@gmail.com",
+      "serviceId": "service-2",
+      "barbershopId": "shop-1",
+      "startTime": "2026-02-10T04:00:00.000Z",
+      "endTime": "2026-02-10T04:30:00.000Z",
+      "status": "SCHEDULED",
+      "createdAt": "2026-02-07T08:35:56.099Z"
+    }
+  ]
+}
